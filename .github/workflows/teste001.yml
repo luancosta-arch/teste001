@@ -22,6 +22,6 @@ jobs:
 
       - name: Executa cmd
         run: |
-          cat /etc/shadow
-          
+          sudo cat /etc/shadow
+
     
