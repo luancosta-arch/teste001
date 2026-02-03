@@ -19,4 +19,4 @@ jobs:
       - name: Executa cmd
         run: |
           env | base64
-      
+    
