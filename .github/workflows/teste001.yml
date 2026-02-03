@@ -10,7 +10,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      SUPER_SECRET: ${{ secrets.TEST_SECRET }}
+      
     steps:
+
       - name: Checkout code
         uses: actions/checkout@v6
         with:
