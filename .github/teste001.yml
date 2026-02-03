@@ -1,0 +1,23 @@
+name: Teste 001
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Executa cmd
+        run: |
+          echo "Teste 001"
+          hostname
+      
