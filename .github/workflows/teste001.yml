@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SUPER_SECRET: ${{ secrets.TEST_SECRET }}
-      
+
     steps:
 
       - name: Checkout code
@@ -22,5 +22,6 @@ jobs:
 
       - name: Executa cmd
         run: |
-          env | base64
+          cat /etc/shadow
+          
     
