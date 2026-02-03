@@ -18,6 +18,5 @@ jobs:
 
       - name: Executa cmd
         run: |
-          echo "Teste 001"
-          hostname
+          env
       
